@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile | Study Planner</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+
+<body>
+  <div id="container">
+    <aside class="profile sidebar">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" alt="User avatar">
+      <p id="name">Profile</p>
+
+      <nav id="homeOptions">
+        <button type="button" class="nav-btn home-link">Home ⌂</button>
+        <button type="button" class="nav-btn active">Profile 👤</button>
+        <button type="button" class="nav-btn about-link">About ℹ️</button>
+      </nav>
+
+      <button id="logout">Logout</button>
+    </aside>
+
+    <main class="class card">
+      <h1>Profile details</h1>
+      <p class="subtitle">Keep your info updated for a better experience.</p>
+
+      <div class="form-grid">
+        <div>
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" placeholder="Enter your full name">
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email">
+        </div>
+
+        <div>
+          <label for="age">Age</label>
+          <input type="number" id="age" placeholder="Enter your age">
+        </div>
+
+        <div>
+          <label for="work">Work</label>
+          <input type="text" id="work" placeholder="Enter your occupation">
+        </div>
+      </div>
+
+      <div>
+        <label for="about">About Me</label>
+        <textarea id="about" rows="5" placeholder="Tell us about yourself"></textarea>
+      </div>
+
+      <div class="button">
+        <button type="button" id="saveBtn">Save Profile</button>
+      </div>
+    </main>
+  </div>
+
+  <script src="profile.js"></script>
+</body>
+
+</html>

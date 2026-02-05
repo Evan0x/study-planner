@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Study Planner</title>
+  <link rel="stylesheet" href="loginPage.css">
+  <script src="loginPage.js" defer></script>
+</head>
+
+<body>
+  <div id="container">
+    <h1>Welcome back 👋</h1>
+    <p class="sub">Log in to continue planning your week.</p>
+
+    <label for="username">Username</label>
+    <input id="username" type="text" placeholder="Enter username" autocomplete="username">
+
+    <label for="password">Password</label>
+    <input id="password" type="password" placeholder="Enter password" autocomplete="current-password">
+
+    <p id="message" aria-live="polite"></p>
+
+    <button id="login" type="button">Login</button>
+    <button id="googleLogin" class="google-btn" type="button">Continue with Google</button>
+
+    <button class="signup" type="button">Don't have an account? Sign up</button>
+  </div>
+</body>
+
+</html>

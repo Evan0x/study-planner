@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Planner</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+  <header class="hero">
+    <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=1400&auto=format&fit=crop&q=80" alt="Planner background">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Study Planner</h1>
+      <p>Plan smarter. Stress less.</p>
+    </div>
+  </header>
+
+  <div id="container">
+    <aside class="profile sidebar">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" alt="User avatar">
+      <p id="name">Welcome</p>
+
+      <nav id="homeOptions">
+        <button type="button" class="nav-btn active" id="goHome">Home ⌂</button>
+        <button type="button" class="nav-btn" id="goProfile">Profile 👤</button>
+        <button type="button" class="nav-btn" id="goAbout">About ℹ️</button>
+      </nav>
+
+      <button id="logout">Logout</button>
+    </aside>
+
+    <main class="content">
+      <section class="card class">
+        <div class="card-header">
+          <h2>Homework</h2>
+          <div class="actions">
+            <button type="button" class="ghost-btn" id="addClassBtn">Add Class +</button>
+            <button type="button" class="primary-btn" id="saveBtn1">Save</button>
+          </div>
+        </div>
+
+        <div id="class-content" class="input-stack"></div>
+        <div id="finalDisplay1" class="result-stack"></div>
+      </section>
+
+      <section class="card homework">
+        <div class="card-header">
+          <h2>Activities</h2>
+          <div class="actions">
+            <button type="button" class="ghost-btn" id="addActivityBtn">Add Activity +</button>
+            <button type="button" class="primary-btn" id="saveBtn2">Save</button>
+          </div>
+        </div>
+
+        <div id="homework-content" class="input-stack"></div>
+        <div id="finalDisplay2" class="result-stack"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="home.js"></script>
+</body>
+
+</html>
