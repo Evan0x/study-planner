@@ -242,6 +242,9 @@ if (googleEnabled) {
 
 app.use(express.static(__dirname));
 
+app.get("/", (req, res) => {
+  res.redirect("/loginPage.html");
+});
 /* ------------------ Start Server ------------------ */
 
 const PORT = process.env.PORT || 3000;
